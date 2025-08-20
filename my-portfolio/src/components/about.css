@@ -80,13 +80,13 @@
 .chat-link {
   position: absolute;
   cursor: pointer; 
-  left: 200px !important; /* move chat link farther from left */
+  left: 220px !important; /* move chat link farther from left */
 }
 
 .work-link {
   position: absolute;
   cursor: pointer; 
-  right: 200px!important;              /* more space from right */
+  right: 220px!important;              /* more space from right */
 }
 
 /* Increase horizontal spacing between buttons */
