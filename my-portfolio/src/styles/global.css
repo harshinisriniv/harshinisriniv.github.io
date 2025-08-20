@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #fdfdfd;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  @font-face {
+    font-family: 'PixelScriptRegular';
+    src: url('../assets/fonts/PixelScriptRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Apply globally */
+  body {
+    font-family: 'PixelScriptRegular', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }

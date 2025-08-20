@@ -1,0 +1,258 @@
+.work {
+    padding: 80px 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .work h2 {
+    font-family: 'PixelScriptRegular', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 50px;
+    color: #222;
+    text-align: left;
+  }
+  
+  .work-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .work-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 2px solid #F2EBE2;
+    border-radius: 10px;
+    padding: 40px;
+    gap: 90px;
+    min-height: 550px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .work-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ------------------- WORK IMAGES ------------------- */
+  .work-images {
+    position: relative;
+  }
+  
+  /* -------- FITCHECK -------- */
+  .fitcheck-card .work-images {
+    width: 600px;
+    height: 400px;
+  }
+  
+  .fitcheck-card .work-image.left {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 320px;
+    z-index: 1;
+  }
+  
+  .fitcheck-card .work-image.middle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    z-index: 2;
+  }
+  
+  .fitcheck-card .work-image.right {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 320px;
+    z-index: 1;
+  }
+  
+  /* -------- QUESTY -------- */
+  .questy-card .work-images {
+    width: 1300px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .questy-card .work-image.left {
+    top: 120px;
+    left: -35px;
+    width: 480px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .questy-card .work-image.middle {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .questy-card .work-image.right {
+    top: 50px;
+    right: -60px;
+    width: 480px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* -------- VALORANT -------- */
+  .valorant-card .work-images {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    top:60px;
+    justify-content: center;
+  }
+  
+  .valorant-card .work-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+  }
+  
+  /* ------------------- WORK INFO ------------------- */
+  .work-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 600px;
+  }
+  
+  .work-info h3 {
+    font-family: 'PixelScriptRegular', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .work-info p {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.7rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  
+  .tags {
+    margin-bottom: 15px;
+  }
+  
+  .tag {
+    background-color: #F2EBE2;
+    color: #222;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 0.9rem;
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+  
+  /* ------------------- BUTTONS ------------------- */
+  .work-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .project-button {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1rem;
+    padding: 8px 16px;
+    background-color: #222;
+    color: #F2EBE2;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #F2EBE2;
+    transition: all 0.2s;
+  }
+  
+  .project-button:hover {
+    background-color: #e1d7c7;
+    border-color: #e1d7c7;
+    cursor: pointer;
+  }
+  
+  .project-button svg {
+    margin-left: 5px;
+    font-size: 1.1rem;
+  }
+  
+  /* ------------------- MODAL ------------------- */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 40px 20px;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: #eee;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* ------------------- RESPONSIVE ------------------- */
+  @media (max-width: 768px) {
+    .work-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .work-images {
+      width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .work-image {
+      width: 80px !important;
+      transform: none !important;
+      position: relative;
+      margin: 0 -20px;
+    }
+  
+    .work-info {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  

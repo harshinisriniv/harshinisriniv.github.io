@@ -1,0 +1,172 @@
+/* questycasestudy.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+.questy-case-study {
+  font-family: 'Pixelify Sans', sans-serif;
+  background: #fafafa;
+  padding: 2rem;
+  color: #222;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Headers */
+.questy-case-study h1,
+.questy-case-study h2,
+.questy-case-study h3 {
+  font-family: 'Pixelify Sans', sans-serif;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 0px #F2EBE2;
+}
+
+.questy-case-study h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.questy-case-study h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  border-bottom: 3px solid #F2EBE2;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.questy-case-study h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+/* Sections */
+.case-section {
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 1rem;
+}
+
+/* Paragraphs */
+.case-section p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+/* Speech bubbles */
+.speech-bubble {
+  background: #F2EBE2;
+  border: 3px solid #F2EBE2;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  max-width: 80%;
+  position: relative;
+  font-style: italic;
+  box-shadow: 3px 3px 0 #F2EBE2;
+}
+
+.speech-bubble:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #F2EBE2;
+}
+
+/* Alternate bubble colors */
+.speech-bubble.blue {
+  background: #e3f2fd;
+  border-color: #64b5f6;
+  box-shadow: 3px 3px 0 #64b5f6;
+}
+
+.speech-bubble.green {
+  background: #e8f5e9;
+  border-color: #81c784;
+  box-shadow: 3px 3px 0 #81c784;
+}
+
+/* Annotation sticky notes */
+.annotation {
+  background: #F2EBE2;
+  border: 2px dashed #222;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: #555;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 2px 2px 0 #F2EBE2;
+}
+
+.annotation:before {
+  content: "Note:";
+  font-weight: bold;
+  margin-right: 6px;
+  color: #222;
+}
+
+/* Images */
+.competitive-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.competitive-images img {
+  max-width: 250px;
+  border: 4px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #ccc;
+  transition: transform 0.2s ease;
+}
+
+.competitive-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Grid Layout for annotations + text */
+.case-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+  .competitive-images img {
+    max-width: 100%;
+  }
+}
+.subtitle {
+    font-family: 'Pixelify Sans', sans-serif;
+    /* or for a more pixelated look: */
+    /* font-family: 'Press Start 2P', monospace; */
+  }
+  .sdt-image {
+    display: block;
+    margin: 2rem auto;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  .questy-inline-img {
+   
+    display: block;
+    margin: 2rem auto;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  

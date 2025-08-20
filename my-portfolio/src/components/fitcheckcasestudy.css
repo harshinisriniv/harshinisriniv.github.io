@@ -1,0 +1,184 @@
+.case-study {
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #222;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  
+  .case-study h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+  }
+  
+  .case-study h2 {
+    margin-top: 25px;
+    font-size: 1.6em;
+    color: #222;
+  }
+  
+  .case-study h3 {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #444;
+  }
+  
+  .case-study p, .case-study ul {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .case-study ul {
+    padding-left: 20px;
+  }
+  .competitive-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .competitive-images .ca-img {
+    width: 680px;           /* fixed width for consistency */
+    max-width: 90%;         /* scales down on smaller screens */
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #EDE6DC; /* beige card behind image */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .competitive-images .ca-img:hover {
+    transform: translateY(-3px);
+  }
+  .process-img {
+    max-width: 80%;
+    width: 700px;
+    display: block;
+    margin: 1rem auto;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .card-img {
+    background-color: #EDE6DC;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .highlight-box {
+    border-left: 4px solid #222;
+    background: #EDE6DC;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+  }
+  
+  .persona-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .persona {
+    flex: 1;
+    min-width: 280px;
+    padding: 15px;
+  }
+  
+  .persona-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 12px;
+  }
+  
+  .how-might-we {
+    border-left: 5px solid #222;
+    background: #EDE6DC;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    font-style: italic;
+    font-weight: 500;
+    color: #222;
+  }
+  
+  .usability-testing {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #EDE6DC;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .feedback-block {
+    border-left: 5px solid;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .feedback-block.positive {
+    border-color: beige;
+  }
+  
+  .feedback-block.negative {
+    border-color: #222;
+  }
+  
+  .quote {
+    font-style: italic;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 8px;
+  }
+  /* Usability Testing Quotes */
+.insight-quote {
+    display: block;
+    margin: 12px 0 20px 0;
+    padding: 12px 18px;
+    border-left: 5px solid; /* accent bar */
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: #F2EBE2; /* light beige base for all quotes */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .insight-quote:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  }
+  
+  .insight-quote.positive {
+    border-color: #4CAF50; /* green for positive */
+    background: linear-gradient(135deg, #E6F4EA, #F2F9F3);
+    color: #1B3A2A;
+  }
+  
+  .insight-quote.negative {
+    border-color: #F44336; /* red for negative */
+    background: linear-gradient(135deg, #FDECEA, #FFF2F1);
+    color: #4A1A15;
+  }
+  
+.case-study h1,
+.case-study h2,
+.case-study h3,
+.case-study h4,
+.case-study h5,
+.case-study h6 {
+    font-family: 'Pixelify Sans', sans-serif;
+}

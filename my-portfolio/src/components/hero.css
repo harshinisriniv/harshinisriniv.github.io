@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+   background-color: #F2EBE2;
+  text-align: center;
+}
+
+.hero-image {
+  width: 1000px; /* adjust size as needed */
+  height: auto;
+  image-rendering: pixelated; /* keeps your pixel art crisp */
+  margin-bottom: -30px;
+  z-index: 1;
+  position:relative;
+}
+
+.hero-text h1 {
+  font-family: 'PixelScriptRegular', sans-serif;
+  font-size: 8rem;
+  margin-bottom: -310px;  /* reduced from 1rem */
+  margin-top: 100px;      /* reduced from 30px */
+  color: #222;
+  z-index: 2;
+  position: relative;
+  text-shadow: 
+  -3px -3px 0 #F2EBE2,
+   3px -3px 0 #F2EBE2,
+  -3px  3px 0 #F2EBE2,
+   3px  3px 0 #F2EBE2,
+  -3px  0   0 #F2EBE2,
+   3px  0   0 #F2EBE2,
+   0   -3px 0 #F2EBE2,
+   0    3px 0 #F2EBE2; /* makes a border effect */
+}
+
+.hero-text p {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #222;
+  margin-left: -25px;
+  margin-bottom: 105px;
+}
+
+.hero-tabs-left,
+.hero-tabs-right {
+  display: flex;
+  flex-direction: row; /* horizontal layout */
+  gap: 30px; /* space between links */
+  position: absolute;
+  top: 34%; /* vertically center relative to hero */
+  transform: translateY(-50%);
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  color: #222;
+  z-index: 10; /* Add higher z-index */
+}
+
+.hero-tabs-left {
+  left: 250px; /* distance from left edge */
+  gap:90px;
+}
+
+.hero-tabs-right {
+  right: 250px; /* distance from right edge */
+  gap: 38px;
+}
+
+/* Higher specificity and !important for debugging */
+.hero .hero-tabs-left a,
+.hero .hero-tabs-right a {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+  color: #222 !important;
+  transition: all 0.3s ease !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  background-color: transparent !important;
+  position: relative !important;
+  z-index: 11 !important;
+}
+
+.hero .hero-tabs-left a:hover,
+.hero .hero-tabs-right a:hover {
+  color: #444 !important;
+}

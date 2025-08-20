@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+/* Container for About Section */
+.about {
+  padding: 200px 250px; /* increased padding for bigger section */
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 70px; /* more space between text and image */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Left text section */
+.about-text {
+
+  flex: 1.1; /* less horizontal space for text */
+  text-align: left; /* keep text aligned left */
+}
+
+.about-text h2 {
+  margin-top: 100px;
+  font-family: 'PixelScriptRegular', sans-serif;
+  font-size: 5rem; /* bigger heading */
+  color: #222;
+  margin-bottom: 35px;
+}
+
+.about-text p {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 2rem; /* bigger paragraph text */
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.about-text .small-text {
+  font-size: 1.6rem; /* bigger small text */
+  color: #666;
+  margin-bottom: 250px;
+}
+
+/* Right image section */
+.about-image-container {
+  flex: 1;                /* more space for image */
+  max-width: none;         /* allow it to grow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.about-image {
+  margin-top: 150px;
+  width: 100%;
+  max-width: 550px !important; /* make image bigger */
+  height: auto; 
+}
+
+/* Overlay buttons on image */
+.chat-link,
+.work-link {
+  position: absolute;
+  bottom: 65px!important;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size:1.6rem;       /* slightly bigger font */
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  z-index: 10;
+  transition: color 0.2s;
+  cursor: pointer; 
+}
+
+.chat-link {
+  position: absolute;
+  cursor: pointer; 
+  left: 200px !important; /* move chat link farther from left */
+}
+
+.work-link {
+  position: absolute;
+  cursor: pointer; 
+  right: 200px!important;              /* more space from right */
+}
+
+/* Increase horizontal spacing between buttons */
+
+
+.chat-link:hover,
+.work-link:hover {
+  color: #FFFFE0;            /* hover only changes text color */
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-image-container {
+    width: 85%;
+    max-width: none;
+  }
+
+  .chat-link {
+    top: 20px;
+    left: 30px;
+    bottom: auto;
+    font-size: 1.4rem;
+    padding: 12px 26px;
+  }
+
+  .work-link {
+    top: 20px;
+    right: 30px;
+    bottom: auto;
+    font-size: 1.4rem;
+    padding: 12px 26px;
+  }
+}
