@@ -86,7 +86,7 @@
 .work-link {
   position: absolute;
   cursor: pointer; 
-  right: 220px!important;              /* more space from right */
+  right: 180px!important;              /* more space from right */
 }
 
 /* Increase horizontal spacing between buttons */
