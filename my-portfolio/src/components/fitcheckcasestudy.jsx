@@ -11,6 +11,9 @@ import journeyMapping from '../assets/journeymapping.png';
 import lofi from '../assets/lofi.png';
 import hifi from '../assets/hifi.png';
 import userflow from '../assets/userflow.png';
+import iteration1 from '../assets/iteration1.png';
+import iteration2 from '../assets/iteration2.png';
+
 
 
 export default function FitCheckCaseStudy() {
@@ -234,8 +237,9 @@ export default function FitCheckCaseStudy() {
     "The posting screen feels a bit cluttered; I’m not sure what I really need to fill in." – User Tester
   </p>
   <p>
-    To address this, I simplified the posting screen by reducing the number of required fields, making daily outfit sharing faster and less intimidating. This iteration balanced functionality with ease of use.
+    To address this, I simplified the posting screen by clarifying the required fields, making daily outfit sharing faster and less intimidating. This iteration balanced functionality with ease of use.
   </p>
+        <img src={iteration1} alt="iterationone" className="process-img" />
 
   <p className="insight-quote negative">
     "I can’t always find the item I want in my closet. It feels messy sometimes." – User Tester
@@ -243,6 +247,7 @@ export default function FitCheckCaseStudy() {
   <p>
     In response, I added wardrobe filters and tag-based organization. Users can now sort items by color, brand, or style, which reduced frustration and improved the digital closet experience.
   </p>
+        <img src={iteration2} alt="iterationtwo" className="process-img" />
 </div>
 
 
